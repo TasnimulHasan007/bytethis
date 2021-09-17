@@ -40,3 +40,81 @@ input,
 button {
   outline: none;
 }
+
+/* utilities */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.main-btn {
+  text-transform: uppercase;
+  display: inline-block;
+  border: 2px solid;
+  padding: 12px 25px;
+  margin: 1rem;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+header img {
+  max-width: 200px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul a {
+  color: #fff;
+  padding: 10px 15px;
+  font-weight: var(--bold);
+  text-transform: uppercase;
+  margin-left: 0.35rem;
+  transition: color 0.5s ease;
+}
+
+header nav ul a:hover {
+  color: hsl(var(--primary-color));
+}
+/* home */
+#home {
+  background: url("../images/bg-home.jpg") no-repeat center center/cover;
+  height: 100vh;
+}
+
+#home .banner {
+  height: calc(100vh - 81px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#home .banner h2 {
+  font-size: 3.5rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#home .main-btn {
+  border-color: #fff;
+  color: #fff;
+}
+
+#home .main-btn:hover {
+  background: #fff;
+  color: hsl(var(--primary-text));
+}
